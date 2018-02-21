@@ -1,0 +1,25 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+    background-color: green!important;
+    color: white;
+  }
+  .heroesinvoices {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .invoices li {
+    cursor: pointer;
+    position: relative;
+  
+  }
+  .invoices li.selected:hover {
+    background-color: rgb(89, 146, 78) !important;
+    color: white;
+  }
+  .invoices li:hover {
+    color: white;
+    background-color: green;
+    left: .1em;
+  }

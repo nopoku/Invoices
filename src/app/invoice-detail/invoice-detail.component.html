@@ -1,0 +1,25 @@
+<div class="container"> 
+    <div  class="input-group mb-3" *ngIf="invoice">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">ID</span>
+        </div>
+        <input [(ngModel)]="invoice.display_name"  type="text" class="form-control" placeholder="display" aria-label="Username" aria-describedby="basic-addon1">
+        <br>
+    </div>
+
+    <div  class="input-group mb-3" *ngIf="invoice">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Year</span>
+        </div>
+        <input [(ngModel)]="invoice.year"  type="text" class="form-control" placeholder="display" aria-label="Username" aria-describedby="basic-addon1">
+        <br>
+    </div>
+
+    <div  class="input-group mb-3" *ngIf="invoice">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Due Date</span>
+            </div>
+            <input [(ngModel)]="invoice.due_date"  type="text" class="form-control" placeholder="display" aria-label="Username" aria-describedby="basic-addon1">
+            <br>
+        </div>
+</div>

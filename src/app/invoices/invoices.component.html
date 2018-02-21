@@ -1,0 +1,18 @@
+<div class="container">
+      <ul class="list-group">
+          <li *ngFor="let invoice of invoices" 
+              (click)="onSelect(invoice)" 
+              [class.selected]="invoice === selectedInvoice"  class="list-group-item"> {{invoice.display_name | uppercase }} 
+            </li>
+        </ul>
+</div>
+<br>
+
+
+<app-invoice-detail [invoice]="selectedInvoice"></app-invoice-detail>
+
+
+
+
+
+
